@@ -1,3 +1,5 @@
+// Logic for Color Switcher
+
 const buttons = document.querySelectorAll(".btn");
 const body = document.querySelector("body");
 
