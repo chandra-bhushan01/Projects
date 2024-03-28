@@ -4,7 +4,7 @@ const result = document.querySelector("#result");
 forms.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const height = parseFloat(document.querySelector("#h").value);
+  const height = parseFloat(document.querySelector("#h").value)/100;
   const weight = parseFloat(document.querySelector("#w").value);
 
   const res = (weight / (height * height)).toFixed(2);
