@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-item {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 2px 2px 5px black;
+            min-width: 300px;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+        form >div{
+            margin-bottom: 15px;
+        }
+        input{
+            outline: none;
+            border: 1px solid black;
+            height: 30px;
+            width: 220px;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        input:hover{
+            scale: 1.05;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <h2>Register Now</h2>
+
+        <form action="">
+            <div>
+                <input type="text" placeholder="Full Name" id="name" required>
+            </div>
+            <div>
+                <input type="date" id="dob"required>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" id="email"required>
+            </div>
+            <div>
+                <input type="password" placeholder="Password" id="pass" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Confirm password"required id="cpass">
+            </div>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+<script>
+    const name = document.querySelector("#name");
+    const pass = document.querySelector("#pass");
+    const cpass = document.querySelector("#cpass");
+    if (name.match(/[^a-zA-Z ]/)) {
+           alert("name cant have symbol.")
+        }
+    if (pass !== cpass) {
+        alert("passwords dont match.")
+    }
+
+</script>
+</html>
